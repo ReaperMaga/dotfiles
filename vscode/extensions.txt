@@ -1,0 +1,9 @@
+antfu.icons-carbon
+chadalen.vscode-jetbrains-icon-theme
+dbaeumer.vscode-eslint
+franzgollhammer.air-theme
+fwcd.kotlin
+golang.go
+k--kato.intellij-idea-keybindings
+subframe7536.custom-ui-style
+vue.volar

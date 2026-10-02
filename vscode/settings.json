@@ -1,0 +1,327 @@
+{
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "chat.viewSessions.orientation": "stacked",
+    "git.autofetch": true,
+
+    // JetBrains Air look
+    "workbench.colorTheme": "Air dark",
+    "editor.fontFamily": "JetBrains Mono, Consolas, monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.7,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.profiles.windows": {
+        "Nushell": {
+            "path": "C:\\Program Files\\nu\\bin\\nu.exe",
+            "icon": "terminal"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Nushell",
+    "terminal.integrated.profiles.osx": {
+        "Nushell": {
+            "path": "/opt/homebrew/bin/nu",
+            "icon": "terminal"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "Nushell",
+    "editor.minimap.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.guides.indentation": false,
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    "editor.padding.top": 8,
+    "workbench.activityBar.location": "top",
+    "workbench.layoutControl.enabled": true,
+    "workbench.layoutControl.type": "toggles",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.tabActionLocation": "right",
+    "breadcrumbs.enabled": false,
+    "window.commandCenter": true,
+    "window.titleBarStyle": "custom",
+    "explorer.compactFolders": false,
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "none",
+
+    // Islands: dark frame (title/status bar + gaps), borderless raised islands
+    "workbench.colorCustomizations": {
+        "[Air dark]": {
+            "titleBar.activeBackground": "#0e0f10",
+            "titleBar.inactiveBackground": "#0e0f10",
+            "titleBar.border": "#00000000",
+            "statusBar.background": "#0e0f10",
+            "statusBar.noFolderBackground": "#0e0f10",
+            "statusBar.debuggingBackground": "#0e0f10",
+            "statusBar.border": "#00000000",
+
+            "editor.background": "#18191b",
+            "editor.foreground": "#bdbdbd",
+            "editorGutter.background": "#18191b",
+            "sideBar.background": "#18191b",
+            "sideBarSectionHeader.background": "#18191b",
+            "activityBar.background": "#18191b",
+            "panel.background": "#18191b",
+            "editorGroupHeader.tabsBackground": "#18191b",
+            "breadcrumb.background": "#18191b",
+
+            "sideBar.border": "#00000000",
+            "sideBarSectionHeader.border": "#00000000",
+            "activityBar.border": "#00000000",
+            "panel.border": "#00000000",
+            "editorGroup.border": "#00000000",
+            "editorGroupHeader.tabsBorder": "#00000000",
+
+            "tab.border": "#00000000",
+            "tab.activeBackground": "#26272a",
+            "tab.inactiveBackground": "#18191b",
+            "tab.hoverBackground": "#202124",
+            "tab.unfocusedHoverBackground": "#202124",
+            "tab.activeBorder": "#00000000",
+            "tab.activeBorderTop": "#00000000",
+            "tab.unfocusedActiveBorder": "#00000000",
+            "tab.unfocusedActiveBorderTop": "#00000000",
+            "tab.selectedBorderTop": "#00000000",
+            "tab.lastPinnedBorder": "#00000000",
+
+            // Replace Air's bright #0078d4 blue with calm Rider palette
+            "focusBorder": "#6c95eb99",
+            "button.background": "#2f3136",
+            "button.foreground": "#dfe1e5",
+            "button.hoverBackground": "#3a3d42",
+            "button.border": "#3c3f44",
+            "button.separator": "#4a4d52",
+            "input.background": "#202124",
+            "input.border": "#2e3034",
+            "input.placeholderForeground": "#6f737a",
+            "inputOption.activeBorder": "#6c95eb",
+            "badge.background": "#2f3136",
+            "badge.foreground": "#bdbdbd",
+            "activityBarBadge.background": "#6c95eb",
+            "activityBarBadge.foreground": "#18191b",
+            "activityBar.activeBorder": "#6c95eb",
+            "panelTitle.activeBorder": "#6c95eb",
+            "progressBar.background": "#6c95eb",
+            "textLink.foreground": "#6c95eb",
+            "textLink.activeForeground": "#8fb0f0",
+            "list.activeSelectionBackground": "#2b2d31",
+            "list.inactiveSelectionBackground": "#232427",
+            "list.hoverBackground": "#202124",
+            "list.focusOutline": "#00000000",
+
+            "scmGraph.foreground1": "#6c95eb",
+            "scmGraph.foreground2": "#c191ff",
+            "scmGraph.foreground3": "#39cc8f",
+            "scmGraph.foreground4": "#c9a26d",
+            "scmGraph.foreground5": "#ed94c0",
+            "scmGraph.historyItemRefColor": "#6c95eb",
+            "scmGraph.historyItemRemoteRefColor": "#c191ff",
+            "scmGraph.historyItemBaseRefColor": "#ed94c0",
+            "scmGraph.historyItemHoverDefaultLabelForeground": "#bdbdbd",
+            "scmGraph.historyItemHoverLabelForeground": "#18191b",
+
+            "gitDecoration.modifiedResourceForeground": "#6c95eb",
+            "gitDecoration.untrackedResourceForeground": "#39cc8f",
+            "gitDecoration.addedResourceForeground": "#39cc8f",
+            "gitDecoration.deletedResourceForeground": "#6f737a",
+            "gitDecoration.conflictingResourceForeground": "#e5484d",
+            "gitDecoration.ignoredResourceForeground": "#5a5d63"
+        }
+    },
+    "workbench.editor.tabSizing": "shrink",
+
+    // Rider dark syntax colors on top of Air dark
+    "editor.tokenColorCustomizations": {
+        "[Air dark]": {
+            "textMateRules": [
+                { "scope": ["source", "variable", "variable.parameter", "variable.other", "meta.definition.variable", "punctuation", "keyword.operator", "meta.brace", "meta.embedded"], "settings": { "foreground": "#bdbdbd", "fontStyle": "" } },
+                { "scope": ["comment", "punctuation.definition.comment"], "settings": { "foreground": "#85c46c", "fontStyle": "" } },
+                { "scope": ["keyword", "keyword.control", "storage", "storage.type", "storage.modifier", "constant.language", "variable.language", "support.type.primitive", "keyword.operator.new", "keyword.operator.expression", "keyword.operator.logical.python", "keyword.operator.word"], "settings": { "foreground": "#6c95eb", "fontStyle": "" } },
+                { "scope": ["string", "string.template", "punctuation.definition.string", "string.quoted"], "settings": { "foreground": "#c9a26d" } },
+                { "scope": ["constant.character.escape", "string.regexp", "punctuation.definition.template-expression", "punctuation.section.embedded"], "settings": { "foreground": "#d688d4" } },
+                { "scope": ["constant.numeric", "keyword.other.unit"], "settings": { "foreground": "#ed94c0" } },
+                { "scope": ["entity.name.function", "support.function", "meta.function-call entity.name.function", "variable.function"], "settings": { "foreground": "#39cc8f" } },
+                { "scope": ["entity.name.type", "entity.name.class", "entity.other.inherited-class", "support.class", "support.type", "entity.name.namespace", "storage.type.java", "storage.type.cs"], "settings": { "foreground": "#c191ff" } },
+                { "scope": ["variable.other.property", "variable.other.object.property", "support.variable.property", "meta.object-literal.key", "variable.other.enummember", "variable.other.constant.property"], "settings": { "foreground": "#66c3cc" } },
+                { "scope": ["entity.name.tag", "punctuation.definition.tag"], "settings": { "foreground": "#6c95eb" } },
+                { "scope": ["entity.other.attribute-name"], "settings": { "foreground": "#bdbdbd" } },
+                { "scope": ["meta.decorator", "entity.name.function.decorator", "punctuation.decorator"], "settings": { "foreground": "#e1bfff" } },
+                { "scope": ["support.type.property-name.css", "support.type.property-name"], "settings": { "foreground": "#66c3cc" } },
+                { "scope": ["entity.other.attribute-name.class.css", "entity.other.attribute-name.id.css"], "settings": { "foreground": "#c191ff" } },
+                { "scope": ["markup.heading", "entity.name.section"], "settings": { "foreground": "#6c95eb", "fontStyle": "bold" } }
+            ]
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "[Air dark]": {
+            "enabled": true,
+            "rules": {
+                "class": "#c191ff",
+                "interface": "#c191ff",
+                "type": "#c191ff",
+                "typeParameter": "#c191ff",
+                "struct": "#e1bfff",
+                "enum": "#e1bfff",
+                "enumMember": "#66c3cc",
+                "namespace": "#bdbdbd",
+                "function": "#39cc8f",
+                "method": "#39cc8f",
+                "property": "#66c3cc",
+                "variable": "#bdbdbd",
+                "parameter": "#bdbdbd",
+                "keyword": "#6c95eb",
+                "number": "#ed94c0",
+                "string": "#c9a26d",
+                "comment": "#85c46c",
+                "decorator": "#e1bfff",
+                "*.deprecated": { "strikethrough": true }
+            }
+        }
+    },
+
+    // Custom UI Style: Inter UI font + Air-style floating rounded panels
+    "custom-ui-style.font.sansSerif": "Inter, 'Segoe UI', sans-serif",
+    "custom-ui-style.font.monospace": "JetBrains Mono",
+    "custom-ui-style.stylesheet": {
+        ".monaco-workbench": {
+            "background-color": "#0e0f10 !important",
+            "-webkit-font-smoothing": "antialiased"
+        },
+        ".monaco-workbench .part.sidebar, .monaco-workbench .part.auxiliarybar, .monaco-workbench .part.panel, .monaco-workbench .part.editor": {
+            "clip-path": "inset(4px round 12px)"
+        },
+        ".monaco-workbench .monaco-icon-label.italic .label-name, .monaco-workbench .monaco-icon-label.italic .label-description": {
+            "font-style": "normal !important"
+        },
+        // Sidebar: text 13px -> 14px, icons 16px -> 17px
+        ".monaco-workbench .part.sidebar .monaco-list-row, .monaco-workbench .part.auxiliarybar .monaco-list-row": {
+            "font-size": "14px !important"
+        },
+        ".monaco-workbench .part.sidebar .pane-header, .monaco-workbench .part.sidebar .title-label h2": {
+            "font-size": "12px !important"
+        },
+        ".monaco-workbench .part.sidebar .show-file-icons .monaco-icon-label::before, .monaco-workbench .part.sidebar .monaco-icon-label.file-icon::before, .monaco-workbench .part.sidebar .monaco-icon-label.folder-icon::before": {
+            "background-size": "17px !important",
+            "font-size": "17px !important",
+            "width": "17px !important"
+        },
+        ".monaco-workbench .part.sidebar .codicon, .monaco-workbench .part.sidebar .action-label.codicon, .monaco-workbench .part.sidebar .composite-bar .action-label": {
+            "font-size": "17px !important"
+        },
+        // Source control: rounded message box and buttons, lighter graph text
+        ".monaco-workbench .scm-view .scm-editor, .monaco-workbench .scm-view .scm-editor-container": {
+            "border-radius": "8px !important",
+            "outline-offset": "-1px"
+        },
+        ".monaco-workbench .part.sidebar .monaco-button, .monaco-workbench .part.sidebar .monaco-button-dropdown": {
+            "border-radius": "8px !important"
+        },
+        ".monaco-workbench .part.sidebar .monaco-button-dropdown > .monaco-button:first-child": {
+            "border-radius": "8px 0 0 8px !important"
+        },
+        ".monaco-workbench .part.sidebar .monaco-button-dropdown > .monaco-button:last-child": {
+            "border-radius": "0 8px 8px 0 !important"
+        },
+        // Source control groups drawn as boxes (header = top, files = sides, last file = bottom)
+        ".monaco-workbench .scm-view .monaco-list-row:has(.resource-group), .monaco-workbench .scm-view .monaco-list-row[aria-level='2']": {
+            "background": "transparent !important",
+            "outline": "none !important"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row:has(.resource-group) > .monaco-tl-row": {
+            "background": "#1e1f22",
+            "border": "1px solid #2e3034",
+            "border-bottom": "none",
+            "border-radius": "8px 8px 0 0",
+            "margin": "4px 8px 0 6px",
+            "height": "calc(100% - 4px)",
+            "box-sizing": "border-box",
+            "padding-left": "6px",
+            "padding-right": "14px"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-expanded='false']:has(.resource-group) > .monaco-tl-row": {
+            "border-bottom": "1px solid #2e3034",
+            "border-radius": "8px"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-level='2'] > .monaco-tl-row": {
+            "background": "#1e1f22",
+            "border-left": "1px solid #2e3034",
+            "border-right": "1px solid #2e3034",
+            "margin": "0 8px 0 6px",
+            "box-sizing": "border-box",
+            "padding-left": "12px",
+            "padding-right": "14px"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='1'][aria-setsize='1'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='2'][aria-setsize='2'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='3'][aria-setsize='3'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='4'][aria-setsize='4'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='5'][aria-setsize='5'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='6'][aria-setsize='6'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='7'][aria-setsize='7'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='8'][aria-setsize='8'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='9'][aria-setsize='9'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='10'][aria-setsize='10'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='11'][aria-setsize='11'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='12'][aria-setsize='12'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='13'][aria-setsize='13'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='14'][aria-setsize='14'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='15'][aria-setsize='15'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='16'][aria-setsize='16'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='17'][aria-setsize='17'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='18'][aria-setsize='18'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='19'][aria-setsize='19'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='20'][aria-setsize='20'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='21'][aria-setsize='21'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='22'][aria-setsize='22'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='23'][aria-setsize='23'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='24'][aria-setsize='24'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='25'][aria-setsize='25'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='26'][aria-setsize='26'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='27'][aria-setsize='27'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='28'][aria-setsize='28'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='29'][aria-setsize='29'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='30'][aria-setsize='30'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='31'][aria-setsize='31'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='32'][aria-setsize='32'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='33'][aria-setsize='33'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='34'][aria-setsize='34'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='35'][aria-setsize='35'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='36'][aria-setsize='36'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='37'][aria-setsize='37'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='38'][aria-setsize='38'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='39'][aria-setsize='39'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='40'][aria-setsize='40'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='41'][aria-setsize='41'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='42'][aria-setsize='42'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='43'][aria-setsize='43'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='44'][aria-setsize='44'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='45'][aria-setsize='45'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='46'][aria-setsize='46'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='47'][aria-setsize='47'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='48'][aria-setsize='48'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='49'][aria-setsize='49'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='50'][aria-setsize='50'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='51'][aria-setsize='51'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='52'][aria-setsize='52'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='53'][aria-setsize='53'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='54'][aria-setsize='54'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='55'][aria-setsize='55'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='56'][aria-setsize='56'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='57'][aria-setsize='57'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='58'][aria-setsize='58'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='59'][aria-setsize='59'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='60'][aria-setsize='60'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='61'][aria-setsize='61'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='62'][aria-setsize='62'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='63'][aria-setsize='63'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='64'][aria-setsize='64'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='65'][aria-setsize='65'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='66'][aria-setsize='66'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='67'][aria-setsize='67'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='68'][aria-setsize='68'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='69'][aria-setsize='69'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='70'][aria-setsize='70'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='71'][aria-setsize='71'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='72'][aria-setsize='72'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='73'][aria-setsize='73'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='74'][aria-setsize='74'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='75'][aria-setsize='75'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='76'][aria-setsize='76'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='77'][aria-setsize='77'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='78'][aria-setsize='78'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='79'][aria-setsize='79'] > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'][aria-posinset='80'][aria-setsize='80'] > .monaco-tl-row": {
+            "border-bottom": "1px solid #2e3034",
+            "border-radius": "0 0 8px 8px",
+            "height": "100%"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-level='2']:hover > .monaco-tl-row": {
+            "background": "#25262a"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-level='2'].selected > .monaco-tl-row, .monaco-workbench .scm-view .monaco-list-row[aria-level='2'].focused > .monaco-tl-row": {
+            "background": "#2b2d31"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-level='2'] .monaco-tl-twistie": {
+            "display": "none !important"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row[aria-level='2'] .monaco-tl-indent": {
+            "width": "22px !important"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row .resource .monaco-icon-label": {
+            "font-size": "15px"
+        },
+        // Staged Changes / Changes headers: small grey labels, plain counts
+        ".monaco-workbench .scm-view .resource-group .name": {
+            "font-size": "12px !important",
+            "font-weight": "600",
+            "text-transform": "uppercase",
+            "letter-spacing": ".06em",
+            "color": "#8b8e94"
+        },
+        ".monaco-workbench .scm-view .resource-group .monaco-count-badge": {
+            "background": "transparent !important",
+            "border": "none !important",
+            "color": "#6f737a !important",
+            "font-size": "11px !important",
+            "font-weight": "400 !important",
+            "min-width": "0 !important",
+            "min-height": "0 !important",
+            "height": "auto !important",
+            "line-height": "normal !important",
+            "padding": "0 2px !important"
+        },
+        ".monaco-workbench .scm-view .resource .label-description": {
+            "color": "#6f737a !important",
+            "font-size": "12px"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row .label-name": {
+            "font-weight": "400 !important"
+        },
+        ".monaco-workbench .scm-view .monaco-list-row .history-item-ref-badge, .monaco-workbench .scm-view .monaco-list-row .label-container .label": {
+            "border-radius": "6px !important"
+        },
+        ".monaco-workbench .part.editor .tabs-container .tab.active": {
+            "border-radius": "6px !important"
+        },
+        ".monaco-workbench .monaco-list-row, .monaco-workbench .action-item .action-label": {
+            "border-radius": "6px"
+        },
+        ".monaco-workbench .part.editor .tabs-container .tab": {
+            "border-radius": "6px 6px 0 0"
+        },
+        ".monaco-workbench .quick-input-widget": {
+            "border-radius": "12px !important",
+            "box-shadow": "0 12px 40px rgba(0,0,0,.45) !important"
+        },
+        ".monaco-workbench .monaco-menu, .monaco-workbench .context-view .monaco-menu-container, .monaco-hover": {
+            "border-radius": "8px !important"
+        },
+        ".monaco-workbench .part.statusbar": {
+            "font-size": "12px"
+        }
+    },
+    "chat.unifiedAgentsBar.enabled": true,
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+    "chat.titleBar.signIn.enabled": false
+}

@@ -1,0 +1,112 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Islands pills: soft rounded chips, like JetBrains Islands / the VS Code setup.
+# Needs a Nerd Font (JetBrainsMono Nerd Font) for the rounded ends:
+#    = left cap,  = right cap
+#
+#   ( findgamestogether/app ) ( main * ) ( node 24 )
+#   ❯
+
+add_newline = true
+palette = "rider"
+
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$nodejs\
+$bun\
+$python\
+$rust\
+$dotnet\
+$cmd_duration\
+$status
+$character"""
+
+[palettes.rider]
+chip = "#26272a"
+fg = "#bdbdbd"
+dim = "#6f737a"
+blue = "#6c95eb"
+teal = "#39cc8f"
+cyan = "#66c3cc"
+purple = "#c191ff"
+tan = "#c9a26d"
+pink = "#ed94c0"
+red = "#e5484d"
+
+[directory]
+truncation_length = 3
+truncation_symbol = ""
+truncate_to_repo = true
+use_os_path_sep = false
+home_symbol = "~"
+style = "fg:cyan bg:chip"
+format = "[](fg:chip)[$path]($style)[$read_only]($read_only_style)[](fg:chip) "
+read_only = " ro"
+read_only_style = "fg:red bg:chip"
+
+# Branch and status share one pill: git_branch opens it, git_status closes it.
+[git_branch]
+format = "[](fg:chip)[$branch]($style)"
+style = "fg:purple bg:chip"
+
+[git_state]
+format = "[ $state( $progress_current/$progress_total)]($style)"
+style = "fg:pink bg:chip"
+
+[git_status]
+format = "[( $all_status$ahead_behind)]($style)[](fg:chip) "
+style = "fg:purple bg:chip"
+conflicted = "!"
+ahead = "↑${count}"
+behind = "↓${count}"
+diverged = "↑${ahead_count}↓${behind_count}"
+untracked = ""
+stashed = ""
+modified = "*"
+staged = ""
+renamed = ""
+deleted = ""
+
+[nodejs]
+format = "[](fg:chip)[node $version]($style)[](fg:chip) "
+version_format = "${major}"
+style = "fg:teal bg:chip"
+
+[bun]
+format = "[](fg:chip)[bun $version]($style)[](fg:chip) "
+version_format = "${major}.${minor}"
+style = "fg:teal bg:chip"
+
+[python]
+format = "[](fg:chip)[py $version( \\($virtualenv\\))]($style)[](fg:chip) "
+version_format = "${major}.${minor}"
+style = "fg:teal bg:chip"
+
+[rust]
+format = "[](fg:chip)[rs $version]($style)[](fg:chip) "
+version_format = "${major}.${minor}"
+style = "fg:teal bg:chip"
+
+[dotnet]
+format = "[](fg:chip)[.net $version]($style)[](fg:chip) "
+version_format = "${major}.${minor}"
+style = "fg:teal bg:chip"
+heuristic = true
+
+[cmd_duration]
+min_time = 2000
+format = "[](fg:chip)[$duration]($style)[](fg:chip) "
+style = "fg:tan bg:chip"
+
+[status]
+disabled = false
+format = "[](fg:chip)[✕ $status]($style)[](fg:chip) "
+style = "fg:red bg:chip"
+
+[character]
+success_symbol = "[❯](bold teal)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold blue)"
