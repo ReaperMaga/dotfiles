@@ -28,6 +28,28 @@ Afterwards:
 1. In VS Code run **Custom UI Style: Reload** (Cmd+Shift+P) once.
 2. Set your terminal app's font to **JetBrainsMono Nerd Font** and its shell to `nu`.
 
+## Set up Windows
+
+Needs [winget](https://learn.microsoft.com/windows/package-manager/winget/) (preinstalled on
+Windows 10/11 as "App Installer") and [Windows Terminal](https://aka.ms/terminal).
+
+```powershell
+git clone https://github.com/ReaperMaga/dotfiles.git $HOME\dotfiles
+cd $HOME\dotfiles
+powershell -ExecutionPolicy Bypass -File .\setup-windows.ps1
+```
+
+On a brand-new PC without Git, run `winget install Git.Git` first and open a new PowerShell window.
+
+The script installs VS Code, Git, Node, Starship and Nushell with winget (skipping ones already
+there), the fonts for your user (no admin needed), the VS Code extensions and settings, builds and
+installs Islet (to `$HOME\Projects\islet`, change with `-IsletDir`), configures Starship for
+Nushell, and sets Windows Terminal's Nushell profile as default with the Nerd Font. Replaced files
+are backed up first, and it is safe to run again.
+
+Afterwards, run **Custom UI Style: Reload** in VS Code (Ctrl+Shift+P) once and restart Windows
+Terminal.
+
 ## Update from Windows
 
 After changing something on Windows:
@@ -49,5 +71,6 @@ vscode/extensions.txt    Marketplace extensions to install
 starship/starship.toml   prompt design
 nushell/config.nu        Nushell settings
 setup-mac.sh             applies everything on a Mac
+setup-windows.ps1        applies everything on Windows
 export-windows.ps1       refreshes this repo from the Windows machine
 ```
