@@ -5,6 +5,12 @@ franzgollhammer.air-theme
 fwcd.kotlin
 golang.go
 k--kato.intellij-idea-keybindings
+ms-azuretools.vscode-containers
+ms-azuretools.vscode-docker
+redhat.java
+redhat.vscode-microprofile
+redhat.vscode-quarkus
 subframe7536.custom-ui-style
 vscjava.vscode-gradle
+vscjava.vscode-java-debug
 vue.volar
