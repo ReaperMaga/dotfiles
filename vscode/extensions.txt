@@ -6,4 +6,5 @@ fwcd.kotlin
 golang.go
 k--kato.intellij-idea-keybindings
 subframe7536.custom-ui-style
+vscjava.vscode-gradle
 vue.volar
