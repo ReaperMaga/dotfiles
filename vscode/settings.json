@@ -25,6 +25,11 @@
         }
     },
     "terminal.integrated.defaultProfile.osx": "Nushell",
+    // Let Alt+1 (IntelliJ "Project" view) work while the terminal has focus instead of going to the shell
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.view.explorer",
+        "workbench.action.toggleSidebarVisibility"
+    ],
     "editor.minimap.enabled": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.semanticHighlighting.enabled": true,
@@ -40,7 +45,7 @@
     "breadcrumbs.enabled": false,
     "window.commandCenter": true,
     "window.titleBarStyle": "custom",
-    "explorer.compactFolders": false,
+    "explorer.compactFolders": true,
     "workbench.tree.indent": 14,
     "workbench.tree.renderIndentGuides": "none",
 
@@ -130,6 +135,9 @@
     },
     "workbench.editor.tabSizing": "shrink",
 
+    // Test runs: never pop open the Test Results panel; open it from its tab when needed
+    "testing.openTesting": "neverOpen",
+
     // Rider dark syntax colors on top of Air dark
     "editor.tokenColorCustomizations": {
         "[Air dark]": {
@@ -205,7 +213,8 @@
             "font-size": "17px !important",
             "width": "17px !important"
         },
-        ".monaco-workbench .part.sidebar .codicon, .monaco-workbench .part.sidebar .action-label.codicon, .monaco-workbench .part.sidebar .composite-bar .action-label": {
+        // Icons only: text buttons that also carry the codicon class (e.g. extension "Install") stay normal
+        ".monaco-workbench .part.sidebar .codicon:not(.extension-action):not(.label), .monaco-workbench .part.sidebar .action-label.codicon:not(.extension-action):not(.label), .monaco-workbench .part.sidebar .composite-bar .action-label": {
             "font-size": "17px !important"
         },
         // Source control: rounded message box and buttons, lighter graph text
@@ -319,9 +328,18 @@
         },
         ".monaco-workbench .part.statusbar": {
             "font-size": "12px"
+        },
+        // Extensions list: keep Install/Update/Manage buttons at VS Code's normal small size
+        // (the 14px sidebar row rule above would otherwise enlarge them)
+        ".monaco-workbench .part.sidebar .extension-list-item .monaco-action-bar .action-label, .monaco-workbench .part.sidebar .extension-list-item .monaco-button, .monaco-workbench .part.sidebar .extension-list-item .extension-action": {
+            "font-size": "11px !important",
+            "line-height": "16px !important"
         }
     },
     "chat.unifiedAgentsBar.enabled": true,
     "chat.titleBar.openInAgentsWindow.enabled": false,
-    "chat.titleBar.signIn.enabled": false
+    "chat.titleBar.signIn.enabled": false,
+    "testing.automaticallyOpenTestResults": "neverOpen",
+    "terminal.integrated.mouseWheelScrollSensitivity": 3,
+    "terminal.integrated.gpuAcceleration": "off"
 }

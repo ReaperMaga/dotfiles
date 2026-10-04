@@ -1,4 +1,5 @@
 antfu.icons-carbon
+anthropic.claude-code
 chadalen.vscode-jetbrains-icon-theme
 dbaeumer.vscode-eslint
 franzgollhammer.air-theme
@@ -7,6 +8,7 @@ golang.go
 k--kato.intellij-idea-keybindings
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
+ms-vscode.live-server
 redhat.java
 redhat.vscode-microprofile
 redhat.vscode-quarkus

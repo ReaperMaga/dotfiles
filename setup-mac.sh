@@ -43,6 +43,8 @@ fi
 
 say "Installing VS Code extensions"
 while IFS= read -r ext; do
+  ext="${ext//$'\r'/}"           # tolerate Windows line endings
+  ext="${ext#$'\xef\xbb\xbf'}"   # and a UTF-8 byte order mark
   [ -n "$ext" ] && "$CODE" --install-extension "$ext" --force >/dev/null && echo "   $ext"
 done < "$DOTFILES/vscode/extensions.txt"
 
